@@ -57,6 +57,7 @@ $ nano Dockerfile      //Below is the content of Dockerfile
 FROM tomcat:latest
 RUN cp -R /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps
 COPY ./*.war /usr/local/tomcat/webapps
+$ cd /opt/Docker
 $ docker build -t webapp:v1 .
 $ docker stop registerapp
 $ docker rm registerapp
